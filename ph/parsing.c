@@ -41,6 +41,7 @@ static long	ft_atoi(char *str)
     data->time_to_die = ft_atoi(av[2]);
     data->time_to_eat = ft_atoi(av[3]);
     data->time_to_sleep = ft_atoi(av[4]);
+	data->end_of_simulation = 0;
     if(av[5])
         data->num_of_meals = ft_atoi(av[5]);
     check_maxint(data);

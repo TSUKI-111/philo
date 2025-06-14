@@ -1,4 +1,5 @@
 #include "philo.h"
+#include <stdio.h>
 
 int main(int ac, char **av)
 {
@@ -6,7 +7,9 @@ int main(int ac, char **av)
     {
         t_data data;
         validate_input(av, &data);
-        initalize(&data);
+        initialize(&data);
+        simulation(&data);
+
     }
     else
         error("ERROR! INVALID NUM OF ARGUMENTS");
